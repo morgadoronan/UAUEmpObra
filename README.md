@@ -17,3 +17,12 @@ Adicione na pagina o elemento abaixo, que corresponde ao controle de seleção d
     <uau-empobra obrasel="obrasel" modoselecao="simples"></uau-empobra>
 </div>
 ```
+
+Para obter a Empresa/Obra selecionada, basta adicionar o código abaixo em qual quer controller.
+```javascript
+//Recebe o evento ao selecionar empresa e obra
+$rootScope.$on('EMPRESAOBRAEVENT', function (e, data) {
+    //Chamada do serviço para salvar empresa e obra
+    alert(data);
+});
+```
