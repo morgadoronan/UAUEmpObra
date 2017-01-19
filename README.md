@@ -6,8 +6,25 @@ Controle para selecionar empresa/obra
 Inclua os arquivos abaixo na sua página
 
 ```html
-<!-- EmpObra -->
-<script src="<%=ResolveUrl("~/")%>UAUComponente/diretivas/SelEmpObra/SelEmpObraDirective.js"></script>
+    <!--angularjs scripts/modules -->
+    <script src="<%=ResolveUrl("~/")%>Scripts/angularjs/angular.min.js"></script>
+    
+    <!-- ui-select files -->
+    <script src="<%=ResolveUrl("~/")%>UAUComponente/lib/select/js/select.js"></script>
+
+    <!-- themes -->
+    <link href="<%=ResolveUrl("~/")%>UAUComponente/lib/select/css/select2.css" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/")%>UAUComponente/lib/select/css/selectize.default.css" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/")%>UAUComponente/lib/select/css/select.css" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/")%>UAUComponente/src/uau-componente.css" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/")%>UAUComponente/lib/grid/css/ui-grid.min.css" rel="stylesheet" />
+ 
+    <!--scripts uau -->    
+    <script src="<%=ResolveUrl("~/")%>UAUComponente/src/uau-common.js"></script>
+    <script src="<%=ResolveUrl("~/")%>UAUComponente/src/uau-componente.js"></script>
+    
+    <!-- EmpObra -->
+    <script src="<%=ResolveUrl("~/")%>UAUComponente/diretivas/SelEmpObra/SelEmpObraDirective.js"></script>
 ```
 
 Adicione na pagina o elemento abaixo, que corresponde ao controle de seleção de Empresa/Obra
